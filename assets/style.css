@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --warna-button: #83d987;
+  --bg-hero: #0f1837;
+  --nav-font: #9094a2;
+  --teks-tipis: #9094a2;
+  --teks-header: #020b2a;
+  --teks-btn: #132039;
+  --teks-profil: #0f1837;
+  --teks-profile-angka: #5943a6;
+}
+
+nav.scrolled {
+  cursor: pointer;
+  transition: 0.5s all;
+  background: var(--teks-btn);
+}
+
+nav {
+  z-index: 1;
+}
+
+.nav-tengah {
+  margin: 0 auto;
+}
+
+/* button */
+.btn {
+  background-color: var(--warna-button);
+  color: var(--teks-btn);
+}
+
+.btn:hover {
+  color: var(--teks-btn);
+  background-color: var(--warna-button);
+  opacity: 0.8;
+  transition: 0.5s all;
+}
+
+.btn:focus {
+  color: var(--teks-btn);
+  background-color: var(--warna-button);
+  outline: none;
+  border: none;
+}
+
+.btn-nav-mobile {
+  display: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  color: var(--nav-font);
+}
+
+.nav-item a:hover {
+  transition: 0.3s all;
+  color: var(--warna-button);
+}
+
+.nav-item a:focus {
+  transition: 0.3s all;
+  color: var(--warna-button);
+}
+
+.jumbotron {
+  padding-top: 250px;
+  margin-top: -80px;
+  height: 720px;
+  color: white;
+  background-color: var(--bg-hero);
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.jumb-kiri {
+  z-index: 1;
+}
+
+.jumb-konten {
+  border-radius: 10px;
+  width: 50vw;
+  height: 17vh;
+  background-color: white;
+  color: var(--teks-header);
+  /* margin: 0 auto; */
+  padding: 20px;
+}
+
+.btn-jumb {
+  padding: 20px 35px;
+  color: var(--teks-btn);
+}
+
+.svg {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  z-index: 1;
+}
+
+/* profile */
+.poto-profile {
+  width: 100%;
+  height: 85%;
+  border-radius: 30px;
+}
+
+.profile-kiri::before {
+  content: url(./profileBefore.png);
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 350px;
+}
+
+.profile-kiri::after {
+  content: url(./profileAfter.png);
+  position: absolute;
+  margin-left: -220px;
+  margin-top: 50px;
+}
+
+.profile {
+  background-color: #f5f6f8;
+  color: var(--teks-profil);
+}
+
+.profile-kontent {
+  display: flex;
+}
+
+.profile-kontent h5 {
+  margin-right: 15px;
+  padding: 15px;
+  background-color: #e7e5f9;
+  color: var(--teks-profil);
+  flex: 0.1;
+  text-align: center;
+  align-self: center;
+}
+
+.profile-kontent p {
+  flex: 1;
+}
+
+/* card */
+.card {
+  border: none;
+  /* margin: 0 20px; */
+  margin-right: 35px;
+}
+
+.card img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-1::before {
+  content: "mansion";
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 0 0 20px 0;
+  color: var(--teks-profile-angka);
+  background-color: white;
+}
+.card-2::before {
+  content: "Apartement";
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 0 0 20px 0;
+  color: var(--teks-profile-angka);
+  background-color: white;
+}
+.card-3::before {
+  content: "House";
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 0 0 20px 0;
+  color: var(--teks-profile-angka);
+  background-color: white;
+}
+.card-4::before {
+  content: "mansion";
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 0 0 20px 0;
+  color: var(--teks-profile-angka);
+  background-color: white;
+}
+
+.card img:hover {
+  transition: 0.5s all;
+  /* opacity: 0.75; */
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.harga {
+  line-height: 50px;
+}
+
+.card-atas h4 {
+  color: var(--teks-profil);
+  line-height: 2rem;
+}
+
+.card-atas a {
+  color: var(--nav-font);
+}
+
+.swiper-android {
+  display: none;
+}
+
+/* form */
+.form-control {
+  width: 100%;
+}
+
+form {
+  width: 17.5vw;
+}
+
+.colom-footer {
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: white;
+  width: 55vw;
+  margin: 0 auto;
+  background-color: var(--bg-hero);
+}
+
+.footer-btn {
+  align-self: center;
+}
+
+.footer-btn .btn {
+  padding: 20px 30px;
+}
+
+.footer-bawah {
+  background-color: #f5f6f8;
+  margin-top: -80px;
+  position: relative;
+  z-index: -11;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+}
+
+.footer-bawah p {
+  z-index: 0;
+}
+
+@media (max-width: 767.98px) {
+  .nav-mobile.gascroll {
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+  }
+
+  .nav-item {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-nav-mobile {
+    display: block;
+  }
+  .btn-nav-mobile {
+    margin: auto;
+    width: 50%;
+  }
+
+  .btn-nav-desktop {
+    display: none;
+  }
+
+  /* jumbotron */
+  .jumbotron {
+    padding-top: 400px;
+    text-align: center;
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .jumb-konten {
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    width: 65vw;
+    height: 42.5vh;
+    background-color: rgba(255, 255, 255, 0.836);
+    color: var(--teks-header);
+    /* margin: 0 auto; */
+    padding: 20px;
+  }
+
+  .jumb-kanan img {
+    position: relative;
+    top: -262px;
+    width: 70%;
+    height: 100%;
+  }
+
+  .svg {
+    width: 100%;
+  }
+
+  /* profil */
+  .profile-kiri::after,
+  .profile-kiri::before {
+    display: none;
+  }
+
+  /* card */
+  .swiper-desktop {
+    display: none;
+  }
+
+  .swiper-android {
+    display: block;
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 80vw;
+  }
+
+  .card img {
+    height: 60vh;
+  }
+
+  .card-atas {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* form */
+  .colom-footer {
+    margin-top: -50px;
+    width: 85%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
