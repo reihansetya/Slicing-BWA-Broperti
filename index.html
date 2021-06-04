@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Broperti Landing</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg mt-3 fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="logo navbar" width="40">
+            </a>
+            <button class="navbar-toggler buton-nav navbar-dark" type="button" data-bs-toggle="collapse" id="buton-nav"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse nav-mobile navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-auto nav-tengah">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <button type="button" class="btn btn-success btn-nav-mobile">My Account</button>
+                </ul>
+                <button type="button" class="btn btn-success btn-nav-desktop">My Account</button>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- hero -->
+    <section class="jumbotron">
+        <svg width="1440" class="svg" height="632" viewBox="0 0 1440 632" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1177.84 -66.5993C1178.46 -34.8179 1179.01 3.4183 1173.97 49.7054C1168.93 96.1274 1144.74 129.939 1108.04 153.545C1071.37 177.139 1022.2 190.539 967.147 196.199C857.045 207.519 723.245 187.898 618.294 156.714C513.51 125.581 430.683 138.471 357.388 173.612C288.507 206.637 228.039 259.313 165.658 313.656L165.658 313.656C161.63 317.164 157.595 320.68 153.549 324.197C100.005 370.745 30.697 370.654 -34.0778 351.717C-98.8565 332.779 -159.212 294.966 -195 265.888L-194.369 265.112C-158.655 294.13 -98.4162 331.865 -33.7972 350.757C30.8257 369.649 99.7188 369.669 152.893 323.442C156.888 319.969 160.874 316.498 164.852 313.032L164.886 313.002L165.002 312.901L165.03 312.876C227.382 258.559 287.947 205.796 356.956 172.71C430.465 137.466 513.547 124.548 618.579 155.756C723.444 186.914 857.109 206.507 967.045 195.204C1022.01 189.552 1071.01 176.18 1107.5 152.704C1143.98 129.24 1167.97 95.682 1172.98 49.5973C1178 3.37756 1177.46 -34.8049 1176.84 -66.5799L1176.81 -68.3844L1176.77 -70.0421C1176.18 -100.186 1175.7 -124.507 1180.28 -144.357C1185.04 -165.012 1195.28 -180.841 1216.49 -193.42C1237.66 -205.977 1269.75 -215.289 1318.19 -223L1318.35 -222.012C1269.93 -214.306 1238 -205.016 1217 -192.56C1196.04 -180.128 1185.96 -164.535 1181.25 -144.132C1176.7 -124.408 1177.18 -100.203 1177.78 -69.9807V-69.9797V-69.9788V-69.9756L1177.84 -66.5993ZM1218.06 0.434372C1218.68 32.2159 1219.23 70.452 1214.19 116.739C1209.15 163.161 1184.96 196.972 1148.26 220.579C1111.59 244.173 1062.42 257.572 1007.37 263.232C897.265 274.553 763.465 254.932 658.514 223.748C553.73 192.614 470.903 205.504 397.608 240.646C328.727 273.671 268.259 326.347 205.878 380.69C201.851 384.198 197.815 387.714 193.769 391.231C140.226 437.779 70.9174 437.687 6.14256 418.75C-58.6361 399.812 -118.991 362 -154.78 332.922L-154.149 332.146C-118.435 361.164 -58.1959 398.899 6.42316 417.791C71.0461 436.683 139.939 436.703 193.113 390.476C197.109 387.003 201.094 383.531 205.072 380.066L205.106 380.036L205.222 379.935L205.251 379.91C267.602 325.592 328.168 272.83 397.176 239.744C470.685 204.5 553.767 191.582 658.799 222.79C763.664 253.948 897.329 273.541 1007.27 262.238C1062.23 256.586 1111.23 243.214 1147.72 219.738C1184.2 196.273 1208.19 162.716 1213.2 116.631C1218.22 70.4113 1217.68 32.2288 1217.06 0.453827C1217.04 -0.708694 1217.02 -1.86273 1216.99 -3.00836C1216.4 -33.1527 1215.92 -57.4734 1220.5 -77.3228C1225.26 -97.9781 1235.5 -113.807 1256.71 -126.387C1277.88 -138.943 1309.97 -148.255 1358.41 -155.966L1358.57 -154.979C1310.15 -147.272 1278.22 -137.982 1257.22 -125.527C1236.26 -113.094 1226.18 -97.5011 1221.47 -77.0981C1216.93 -57.3735 1217.4 -33.1679 1218 -2.94505V-2.94185L1218.06 0.434372ZM1254.41 183.773C1259.45 137.486 1258.9 99.2499 1258.28 67.4684L1258.22 64.0922V64.089V64.088V64.0871C1257.62 33.8651 1257.15 9.66011 1261.69 -10.0641C1266.4 -30.4671 1276.48 -46.0599 1297.44 -58.4926C1318.44 -70.9481 1350.37 -80.2378 1398.79 -87.9447L1398.63 -88.9323C1350.19 -81.2214 1318.1 -71.9093 1296.93 -59.3527C1275.72 -46.7734 1265.48 -30.9441 1260.72 -10.2888C1256.14 9.56062 1256.62 33.8813 1257.21 64.0256C1257.24 65.1713 1257.26 66.3253 1257.28 67.4878C1257.9 99.2628 1258.44 137.445 1253.42 183.665C1248.41 229.75 1224.42 263.307 1187.94 286.772C1151.45 310.248 1102.46 323.62 1047.49 329.272C937.549 340.575 803.885 320.982 699.019 289.824C593.987 258.616 510.905 271.534 437.396 306.778C368.388 339.864 307.823 392.626 245.472 446.943L245.471 446.944C241.434 450.461 237.389 453.985 233.334 457.51C180.159 503.737 111.266 503.717 46.6435 484.825C-17.9755 465.933 -78.2143 428.198 -113.929 399.18L-114.559 399.956C-78.771 429.034 -18.4158 466.846 46.3629 485.784C111.138 504.721 180.446 504.813 233.99 458.265C238.036 454.747 242.071 451.232 246.098 447.724L246.099 447.723C308.48 393.381 368.948 340.705 437.829 307.68C511.124 272.538 593.95 259.648 698.734 290.782C803.685 321.966 937.486 341.587 1047.59 330.266C1102.64 324.606 1151.81 311.207 1188.48 287.613C1225.18 264.006 1249.37 230.195 1254.41 183.773ZM1298.5 134.502C1299.12 166.284 1299.67 204.52 1294.63 250.807C1289.59 297.229 1265.4 331.04 1228.7 354.646C1192.03 378.241 1142.86 391.64 1087.81 397.3C977.706 408.621 843.906 388.999 738.955 357.816C634.171 326.682 551.344 339.572 478.049 374.714C409.168 407.739 348.7 460.415 286.319 514.758C282.291 518.266 278.256 521.781 274.21 525.299C220.666 571.847 151.358 571.755 86.5832 552.818C21.8045 533.88 -38.5507 496.068 -74.339 466.99L-73.7084 466.214C-37.9939 495.232 22.2448 532.967 86.8638 551.858C151.487 570.751 220.38 570.771 273.554 524.544C277.609 521.019 281.654 517.495 285.691 513.978L285.692 513.978C348.043 459.66 408.609 406.898 477.617 373.812C551.126 338.568 634.208 325.65 739.24 356.857C844.105 388.015 977.77 407.609 1087.71 396.305C1142.68 390.654 1191.67 377.281 1228.16 353.805C1264.64 330.341 1288.63 296.784 1293.64 250.699C1298.66 204.479 1298.12 166.297 1297.5 134.522L1297.48 133.236L1297.43 131.059C1296.84 100.915 1296.36 76.5945 1300.94 56.745C1305.7 36.0897 1315.94 20.2604 1337.15 7.68114C1358.32 -4.87544 1390.41 -14.1876 1438.85 -21.8985L1439.01 -20.9109C1390.59 -13.204 1358.66 -3.91423 1337.66 8.54121C1316.7 20.9739 1306.62 36.5668 1301.91 56.9697C1297.37 76.6944 1297.84 100.9 1298.44 131.123V131.126L1298.5 134.502ZM1334.86 317.841C1339.89 271.554 1339.34 233.318 1338.72 201.536L1338.66 198.16V198.157C1338.06 167.934 1337.59 143.728 1342.14 124.004C1346.84 103.601 1356.92 88.0078 1377.88 75.5751C1398.88 63.1196 1430.81 53.8299 1479.23 46.123L1479.07 45.1354C1430.63 52.8463 1398.54 62.1584 1377.37 74.715C1356.16 87.2943 1345.92 103.124 1341.16 123.779C1336.58 143.628 1337.06 167.949 1337.66 198.093C1337.68 199.239 1337.7 200.393 1337.72 201.556C1338.34 233.331 1338.88 271.513 1333.86 317.733C1328.85 363.817 1304.86 397.375 1268.38 420.839C1231.89 444.315 1182.9 457.688 1127.93 463.339C1017.99 474.643 884.325 455.049 779.46 423.891C674.428 392.684 591.346 405.602 517.837 440.846C448.829 473.932 388.263 526.694 325.912 581.012L325.826 581.086C321.817 584.579 317.801 588.077 313.774 591.578C260.6 637.805 191.707 637.785 127.084 618.892C62.4651 600.001 2.22639 562.266 -33.4881 533.248L-34.1187 534.024C1.66966 563.102 62.0249 600.914 126.804 619.852C191.578 638.789 260.887 638.881 314.43 592.333C318.477 588.815 322.512 585.3 326.539 581.792C388.92 527.449 449.388 474.773 518.269 441.747C591.564 406.606 674.391 393.716 779.175 424.85C884.126 456.033 1017.93 475.655 1128.03 464.334C1183.08 458.674 1232.25 445.275 1268.92 421.68C1305.62 398.074 1329.81 364.263 1334.86 317.841Z"
+                fill="url(#paint0_linear)" />
+            <defs>
+                <linearGradient id="paint0_linear" x1="868.968" y1="-109.278" x2="703.968" y2="538.222"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F7F7F9" />
+                    <stop offset="1" stop-color="#0F1837" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <div class="jumb-kiri">
+            <h1 class="display-6 mb-5">Discover Your <br>
+                Own Future Empire <br>
+                Easy Cozy</h1>
+            <p class="mb-5">Saving much time by finding the match <br> one
+                using our algorithm that we designed</p>
+            <div class="row jumb-konten align-items-center">
+                <div class="col-md-4">
+                    <p>Location</p>
+                    <p class="fw-bold">Sumatra Selatan</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Type</p>
+                    <p class="fw-bold">Apartement</p>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success btn-jumb">Explore Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="jumb-kanan">
+            <img src="./assets/imgHero.png" height="475" alt="">
+        </div>
+    </section>
+    <!-- end hero -->
+
+    <!-- profile -->
+    <div class="profile pt-5 pb-5">
+        <div class="container pt-5">
+            <div class="row justify-content-around">
+                <div class="col-md-5 profile-kiri">
+                    <img src="./assets/profilePoto.png" class="poto-profile" alt="poto profil">
+                </div>
+                <div class="col-md-5 mt-5">
+                    <h3 class="mb-5 fw-bold">Why Us Suit For You</h3>
+                    <div class="profile-kontent mb-4">
+                        <h5>1</h5>
+                        <p class="fs-6">We are not asking for any fee from
+                            both party (landlord or even buyer)</p>
+                    </div>
+                    <div class="profile-kontent mb-4">
+                        <h5>2</h5>
+                        <p class="fs-6">We take care every single thing that
+                            buyer need to complete beforehand</p>
+                    </div>
+                    <div class="profile-kontent mb-4">
+                        <h5>3</h5>
+                        <p class="fs-6">We help buyer to find the place without
+                            hassle and helping them with paperwork</p>
+                    </div>
+                    <div class="profile-kontent mb-4">
+                        <h5>4</h5>
+                        <p class="fs-6">We help landlord to register their license
+                            to goverment in order want to sell</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3 text-center">
+                <div class="col-3">
+                    <h4 class="fw-bold">15,600</h4>
+                    <p>House & Apartement</p>
+                </div>
+                <div class="col-3">
+                    <h4 class="fw-bold">580K</h4>
+                    <p>Success Buyer</p>
+                </div>
+                <div class="col-3">
+                    <h4 class="fw-bold">99K</h4>
+                    <p>Best Locations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end profile -->
+
+    <!-- card -->
+    <div class="cartu pt-5 pb-5">
+        <div class="container pt-5">
+            <div class="row card-atas align-items-center mb-3">
+                <div class="col">
+                    <h4>You're Probably <br> Gonna Love These</h4>
+                </div>
+                <div class="col text-md-end">
+                    <a href="#">View All Recomendation</a>
+                </div>
+            </div>
+            <div class="swiper-container swiper-desktop mySwiper">
+                <div class=" swiper-wrapper">
+                    <div class="col-md-3 card card-1 swipper-slide">
+                        <img src="./assets/card1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-body-kiri">
+                                <h6 class="fw-bold">Do Park</h6>
+                                <p>Sullo, Komasia</p>
+                            </div>
+                            <div class="card-body-kanan">
+                                <h6 class="fw-bold harga">$592,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-2 swipper-slide">
+                        <img src="./assets/card2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-body-kiri">
+                                <h6 class="fw-bold">Brown Gask</h6>
+                                <p>Lahu, Lamma</p>
+                            </div>
+                            <div class="card-body-kanan">
+                                <h6 class="fw-bold harga">$592,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-3 swipper-slide">
+
+                        <img src="./assets/card3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-body-kiri">
+                                <h6 class="fw-bold">Yellow Glow</h6>
+                                <p>Pola, Inkopad</p>
+                            </div>
+                            <div class="card-body-kanan">
+                                <h6 class="fw-bold harga">$88,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-4 swipper-slide">
+                        <img src="./assets/card4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-body-kiri">
+                                <h6 class="fw-bold">White Cow</h6>
+                                <p>Inka, Hajjar</p>
+                            </div>
+                            <div class="card-body-kanan">
+                                <h6 class="fw-bold harga">$188,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-container-vertical swiper-android">
+                <div class=" swiper-wrapper">
+                    <div class="col-md-3 card card-1 swipper-slide">
+                        <img src="./assets/card1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-body-kiri">
+                                <h6 class="fw-bold">Do Park</h6>
+                                <p>Sullo, Komasia</p>
+                            </div>
+                            <div class="card-body-kanan">
+                                <h6 class="fw-bold harga">$592,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-2 swipper-slide">
+                        <img src="./assets/card2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-body-kiri">
+                                <h6 class="fw-bold">Brown Gask</h6>
+                                <p>Lahu, Lamma</p>
+                            </div>
+                            <div class="card-body-kanan">
+                                <h6 class="fw-bold harga">$592,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-3 swipper-slide">
+
+                        <img src="./assets/card3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-body-kiri">
+                                <h6 class="fw-bold">Yellow Glow</h6>
+                                <p>Pola, Inkopad</p>
+                            </div>
+                            <div class="card-body-kanan">
+                                <h6 class="fw-bold harga">$88,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-4 swipper-slide">
+                        <img src="./assets/card4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card-body-kiri">
+                                <h6 class="fw-bold">White Cow</h6>
+                                <p>Inka, Hajjar</p>
+                            </div>
+                            <div class="card-body-kanan">
+                                <h6 class="fw-bold harga">$188,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end card -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container pt-5 pb-5">
+            <div class="row colom-footer justify-content-evenly">
+                <div class="col-md-3 me-auto">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                            <input type="name" class="form-control" id="name">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 ms-auto footer-btn">
+                    <button type="submit" class="btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center footer-bawah">
+            <div class="col">
+                <p class="mt-5 pt-3">Copyright 2021. All Rights Reserved Pixel by BuildWith Angga.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
